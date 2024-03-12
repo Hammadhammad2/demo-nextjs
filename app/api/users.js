@@ -7,7 +7,6 @@ const ITEMS_PER_PAGE = 10;
 export async function fetchUsers(query) {
   try {
     const response = await instance.get(`/users?q=${query}`);
-    console.log("fetch Data ccordingly", response.data.length);
     return response.data;
   } catch (error) {
     return { message: "Failed to fetch users" };

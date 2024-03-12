@@ -17,8 +17,6 @@ import {
 export default async function UsersTable({ query }) {
   const searchedUsers = await fetchUsers(query);
 
-  console.log("searchedUsers>>>>>>>>>>>>>>>>>>", searchedUsers.length);
-
   return (
     <div className="mt-6 flow-root">
       <div className="inline-block min-w-full align-middle">
